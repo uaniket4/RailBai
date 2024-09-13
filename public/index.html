@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Booking System</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the CSS file -->
+</head>
+<body>
+    <header>
+        <h1>Train Booking System</h1>
+    </header>
+
+    <main>
+        <section id="search-section">
+            <h2>Search Trains</h2>
+            <form id="search-form">
+                <input type="text" id="from" placeholder="From (Station Code)" required>
+                <input type="text" id="to" placeholder="To (Station Code)" required>
+                <input type="date" id="date" required>
+                <button type="submit">Search</button>
+            </form>
+        </section>
+
+        <section id="results-section">
+            <h2>Available Trains</h2>
+            <ul id="train-list">
+                <!-- Train search results will be injected here -->
+            </ul>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
